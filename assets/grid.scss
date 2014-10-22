@@ -1,0 +1,26 @@
+// Grid Stuff:
+
+$container_margin: auto;
+$total_columns: 12;
+
+$column_width: 80px;
+$gutter_width: 30px;
+
+$total_width: $column_width * $total_columns;
+
+.row {
+	width: $total_width; margin: 0 auto; transition: width 150ms linear;
+
+	&.half { width: $total_width; }
+	&:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+	@for $i from 1 through $total_columns {
+		.col#{$i} {
+			width: ($total_width / $total_columns - $gutter_width) * $i + ($i * $gutter_width) - $gutter_width;
+			float: left;
+
+			margin-left: $gutter_width / 2;
+			margin-right: $gutter_width / 2;
+		}
+	}
+}

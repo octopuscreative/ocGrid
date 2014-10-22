@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Grids</title>
+
+		<link rel="stylesheet" href="./assets/styles.css">
+		<link rel="stylesheet" href="./assets/grid.css">
+	</head>
+	<body>
+		<header>
+			<h1>Octopus Grid</h1>
+			<p>Essentially, the Octopus Grid is a 12 column grid that has adjustable behaviors for its "collapsed" and "expanded" states. Any given "row" of the grid will have:</p>
+			<ul>
+				<li>a "collapsed fluid" state for <640</li>
+				<li>a "squished normal" state for 640 ---> <960</li>
+				<li>a "normal" state for 960 ---> <1280</li>
+				<li>an "expanded state" for >= 1280</li>
+			</ul>
+			<p>For example, if you used the class <em>.row.clp8.exp16</em>, it would be 12 columns for tablets and "normal" desktop, but on mobile it would be 8 columns and on "large" desktop it would be 16 columns. Using this setup, mobile would fit two 4-column items, "large" desktop would fit four 4-column items, and everything else would fit 3 as per "normal"</p>
+		</header>
+
+		<main>
+			<section>
+			<!-- Expand 16 / Collapse 8 -->
+				<div class="row clp8 exp16">
+				<!-- Two Columns -->
+					<div class="col12">1 of 1</div>
+				</div>
+
+				<div class="row clp8 exp16">
+				<!-- Two Columns -->
+					<div class="col6">1 of 2</div>
+					<div class="col6">2 of 2</div>
+				</div>
+
+				<div class="row clp8 exp16">
+				<!-- Three Columns -->
+					<div class="col4">1 of 3</div>
+					<div class="col4">2 of 3</div>
+					<div class="col4">3 of 3</div>
+				</div>
+
+				<div class="row clp8 exp16">
+				<!-- four Columns -->
+					<div class="col3">1 of 4</div>
+					<div class="col3">2 of 4</div>
+					<div class="col3">3 of 4</div>
+					<div class="col3">4 of 4</div>
+				</div>
+
+				<div class="row clp8 exp16">
+				<!-- six Columns -->
+					<div class="col2">1 of 6</div>
+					<div class="col2">2 of 6</div>
+					<div class="col2">3 of 6</div>
+					<div class="col2">4 of 6</div>
+					<div class="col2">5 of 6</div>
+					<div class="col2">6 of 6</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

@@ -3,9 +3,6 @@
   margin: 0 auto;
   transition: width 150ms linear;
 }
-.row.half {
-  width: 960px;
-}
 .row:after {
   content: ".";
   display: block;
@@ -14,74 +11,288 @@
   visibility: hidden;
 }
 .row .col1 {
-  width: 50px;
+  width: 60px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col2 {
-  width: 130px;
+  width: 140px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col3 {
-  width: 210px;
+  width: 220px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col4 {
-  width: 290px;
+  width: 300px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col5 {
-  width: 370px;
+  width: 380px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col6 {
-  width: 450px;
+  width: 460px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col7 {
-  width: 530px;
+  width: 540px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col8 {
-  width: 610px;
+  width: 620px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col9 {
-  width: 690px;
+  width: 700px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col10 {
-  width: 770px;
+  width: 780px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col11 {
-  width: 850px;
+  width: 860px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .row .col12 {
-  width: 930px;
+  width: 940px;
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 639px) {
+  .row {
+    width: 100%;
+  }
+  .row .col1 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col2 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col3 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col4 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col5 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col6 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col7 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col8 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col9 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col10 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col11 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row .col12 {
+    width: 97%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  .row.clp8 .col1 {
+    width: 9.5%;
+  }
+  .row.clp8 .col2 {
+    width: 22%;
+  }
+  .row.clp8 .col4 {
+    width: 47%;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+  .row {
+    width: 640px;
+  }
+  .row .col1 {
+    width: 40px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col2 {
+    width: 93.33333px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col3 {
+    width: 146.66667px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col4 {
+    width: 200px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col5 {
+    width: 253.33333px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col6 {
+    width: 306.66667px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col7 {
+    width: 360.0px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col8 {
+    width: 413.33333px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col9 {
+    width: 466.66667px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col10 {
+    width: 520px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col11 {
+    width: 573.33333px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+  .row .col12 {
+    width: 626.66667px;
+    margin-left: 6.66667px;
+    margin-right: 6.66667px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .row {
+    width: 1280px;
+  }
+  .row .col1 {
+    width: 80px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col2 {
+    width: 186.66667px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col3 {
+    width: 293.33333px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col4 {
+    width: 400px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col5 {
+    width: 506.66667px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col6 {
+    width: 613.33333px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col7 {
+    width: 720.0px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col8 {
+    width: 826.66667px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col9 {
+    width: 933.33333px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col10 {
+    width: 1040px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col11 {
+    width: 1146.66667px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row .col12 {
+    width: 1253.33333px;
+    margin-left: 13.33333px;
+    margin-right: 13.33333px;
+  }
+  .row.exp16 .col1 {
+    width: 53.33333px;
+  }
+  .row.exp16 .col2 {
+    width: 133.33333px;
+  }
+  .row.exp16 .col4 {
+    width: 293.33333px;
+  }
 }

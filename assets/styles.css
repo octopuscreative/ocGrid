@@ -100,14 +100,15 @@ input, select {
   vertical-align: middle;
 }
 
-.row + .row {
-  margin-top: 20px;
-}
-
 [class*='col'] {
   background-color: #30383F;
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
+}
+
+section {
+  margin-bottom: 60px;
 }

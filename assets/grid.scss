@@ -1,26 +1,126 @@
 // Grid Stuff:
 
 $container_margin: auto;
-$total_columns: 12;
+$standard_column_count: 12;
 
-$column_width: 80px;
-$gutter_width: 30px;
+$column_width: 60px;
+$gutter_width: 20px;
 
-$total_width: $column_width * $total_columns;
+$total_width: $column_width * $standard_column_count + $gutter_width * $standard_column_count;
 
+// standard
 .row {
 	width: $total_width; margin: 0 auto; transition: width 150ms linear;
 
-	&.half { width: $total_width; }
+	// &.half { width: $total_width; }
 	&:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
-	@for $i from 1 through $total_columns {
+	@for $i from 1 through $standard_column_count {
 		.col#{$i} {
-			width: ($total_width / $total_columns - $gutter_width) * $i + ($i * $gutter_width) - $gutter_width;
+			width: ($total_width / $standard_column_count - $gutter_width) * $i + ($i * $gutter_width) - $gutter_width;
 			float: left;
 
 			margin-left: $gutter_width / 2;
 			margin-right: $gutter_width / 2;
+		}
+	}
+}
+
+// mobile
+@media only screen and (max-width: 639px) {
+	$m_column_count: 1;
+
+	$m_column_width: 5.5%;
+	$m_gutter_width: 3%;
+
+	// by default, switch to a one-column grid
+	.row {
+		width: 100%;
+
+		@for $i from 1 through $standard_column_count {
+			.col#{$i} {
+				width: 97%;
+
+				margin-left: $m_gutter_width / 2;
+				margin-right: $m_gutter_width / 2;
+			}
+		}
+
+		// clp8 allows 1, 2, and 4 columns to fit more per row (treating the grid as if it were 8 columns)
+		&.clp8 {
+			$m_8_column_count: 8;
+
+			.col1 {
+				width: (100% / $m_8_column_count - $m_gutter_width) * 1 + (1 * $m_gutter_width) - $m_gutter_width;
+			}
+
+			.col2 {
+				width: (100% / $m_8_column_count - $m_gutter_width) * 2 + (2 * $m_gutter_width) - $m_gutter_width;
+			}
+
+			.col4 {
+				width: (100% / $m_8_column_count - $m_gutter_width) * 4 + (4 * $m_gutter_width) - $m_gutter_width;
+			}
+		}
+	}
+}
+
+// "squished" standard
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+	$ss_column_width: $column_width / 1.5;
+	$ss_gutter_width: $gutter_width / 1.5;
+
+	$ss_total_width: $ss_column_width * $standard_column_count + $ss_gutter_width * $standard_column_count;
+
+	.row {
+		width: $ss_total_width;
+
+		@for $i from 1 through $standard_column_count {
+			.col#{$i} {
+				width: ($ss_total_width / $standard_column_count - $ss_gutter_width) * $i + ($i * $ss_gutter_width) - $ss_gutter_width;
+
+				margin-left: $ss_gutter_width / 2;
+				margin-right: $ss_gutter_width / 2;
+			}
+		}
+	}
+}
+
+// large screens
+@media only screen and (min-width: 1280px) {
+	$ls_column_width: $column_width / 0.75;
+	$ls_gutter_width: $gutter_width / 0.75;
+
+	$ls_total_width: $ls_column_width * $standard_column_count + $ls_gutter_width * $standard_column_count;
+
+	// by default, stick with a 12-column grid
+	.row {
+		width: $ls_total_width;
+
+		@for $i from 1 through $standard_column_count {
+			.col#{$i} {
+				width: ($ls_total_width / $standard_column_count - $ls_gutter_width) * $i + ($i * $ls_gutter_width) - $ls_gutter_width;
+
+				margin-left: $ls_gutter_width / 2;
+				margin-right: $ls_gutter_width / 2;
+			}
+		}
+
+		// exp16 allows 1, 2, and 4 columns to fit more per row (treating the grid as if it were 16 columns)
+		&.exp16 {
+			$ls_16_column_count: 16;
+
+			.col1 {
+				width: ($ls_total_width / $ls_16_column_count - $ls_gutter_width) * 1 + (1 * $ls_gutter_width) - $ls_gutter_width;
+			}
+
+			.col2 {
+				width: ($ls_total_width / $ls_16_column_count - $ls_gutter_width) * 2 + (2 * $ls_gutter_width) - $ls_gutter_width;
+			}
+
+			.col4 {
+				width: ($ls_total_width / $ls_16_column_count - $ls_gutter_width) * 4 + (4 * $ls_gutter_width) - $ls_gutter_width;
+			}
 		}
 	}
 }

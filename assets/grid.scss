@@ -23,6 +23,10 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 			margin-left: $gutter_width / 2;
 			margin-right: $gutter_width / 2;
 		}
+
+		.push#{$i}[class*='col'] {
+			margin-left: ($total_width / $standard_column_count - $gutter_width) * $i + ($i * $gutter_width) + ($gutter_width / 2);
+		}
 	}
 }
 
@@ -44,6 +48,8 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 				margin-left: $m_gutter_width / 2;
 				margin-right: $m_gutter_width / 2;
 			}
+
+			.push#{$i}[class*='col'] { margin-left: $m_gutter_width / 2; }
 		}
 
 		// clp8 allows 1, 2, and 4 columns to fit more per row (treating the grid as if it were 8 columns)
@@ -82,6 +88,10 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 				margin-left: $ss_gutter_width / 2;
 				margin-right: $ss_gutter_width / 2;
 			}
+
+			.push#{$i}[class*='col'] {
+				margin-left: ($ss_total_width / $standard_column_count - $ss_gutter_width) * $i + ($i * $ss_gutter_width) + ($ss_gutter_width / 2);
+			}
 		}
 	}
 }
@@ -103,6 +113,10 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 
 				margin-left: $ls_gutter_width / 2;
 				margin-right: $ls_gutter_width / 2;
+			}
+
+			.push#{$i}[class*='col'] {
+				margin-left: ($ls_total_width / $standard_column_count - $ls_gutter_width) * $i + ($i * $ls_gutter_width) + ($ls_gutter_width / 2);
 			}
 		}
 

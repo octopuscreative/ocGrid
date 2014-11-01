@@ -20,8 +20,7 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 			width: ($total_width / $standard_column_count - $gutter_width) * $i + ($i * $gutter_width) - $gutter_width;
 			float: left;
 
-			margin-left: $gutter_width / 2;
-			margin-right: $gutter_width / 2;
+			margin: $gutter_width / 2;
 		}
 
 		.push#{$i}[class*='col'] {
@@ -45,8 +44,7 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 			.col#{$i} {
 				width: 97%;
 
-				margin-left: $m_gutter_width / 2;
-				margin-right: $m_gutter_width / 2;
+				margin: $m_gutter_width / 2;
 			}
 
 			.push#{$i}[class*='col'] { margin-left: $m_gutter_width / 2; }
@@ -72,7 +70,7 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 }
 
 // "squished" standard
-@media only screen and (min-width: 640px) and (max-width: 959px) {
+@media only screen and (min-width: 640px) and (max-width: 979) {
 	$ss_column_width: $column_width / 1.5;
 	$ss_gutter_width: $gutter_width / 1.5;
 
@@ -85,8 +83,7 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 			.col#{$i} {
 				width: ($ss_total_width / $standard_column_count - $ss_gutter_width) * $i + ($i * $ss_gutter_width) - $ss_gutter_width;
 
-				margin-left: $ss_gutter_width / 2;
-				margin-right: $ss_gutter_width / 2;
+				margin: $ss_gutter_width / 2;
 			}
 
 			.push#{$i}[class*='col'] {
@@ -111,8 +108,7 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 			.col#{$i} {
 				width: ($ls_total_width / $standard_column_count - $ls_gutter_width) * $i + ($i * $ls_gutter_width) - $ls_gutter_width;
 
-				margin-left: $ls_gutter_width / 2;
-				margin-right: $ls_gutter_width / 2;
+				margin: $ls_gutter_width / 2;
 			}
 
 			.push#{$i}[class*='col'] {

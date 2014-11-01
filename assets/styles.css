@@ -56,6 +56,11 @@ main [class*='col'] {
   border-radius: 3px;
 }
 
+main .ctr {
+  padding: 0;
+  background: transparent;
+}
+
 section {
   margin-bottom: 60px;
 }

@@ -78,7 +78,7 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 				width: (100% / $m_8_column_count - $m_gutter_width) * 2 + (2 * $m_gutter_width) - $m_gutter_width;
 			}
 
-			.col4 {
+			.col3, .col4 {
 				width: (100% / $m_8_column_count - $m_gutter_width) * 4 + (4 * $m_gutter_width) - $m_gutter_width;
 			}
 		}
@@ -160,7 +160,7 @@ $total_width: $column_width * $standard_column_count + $gutter_width * $standard
 				width: ($ls_total_width / $ls_16_column_count - $ls_gutter_width) * 2 + (2 * $ls_gutter_width) - $ls_gutter_width;
 			}
 
-			.col4 {
+			.col3, .col4 {
 				width: ($ls_total_width / $ls_16_column_count - $ls_gutter_width) * 4 + (4 * $ls_gutter_width) - $ls_gutter_width;
 			}
 		}

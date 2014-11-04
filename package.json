@@ -1,9 +1,29 @@
 {
-  "name": "octopus-grid",
-  "version": "0.0.1",
+  "author": "Octopus Creative",
+  "name": "ocGrid",
+  "version": "1.0.1",
+  "description": "A grid. For grid-like things.",
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.5",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1"
-  }
+  },
+  "engine": "node >= 0.10",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/octopuscreative/ocGrid/blob/master/LICENSE.md"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Paul Straw",
+      "url": "https://github.com/paulstraw"
+    }
+  ],
+  "download": "https://github.com/octopuscreative/ocGrid/releases",
+  "bugs": "https://github.com/octopuscreative/ocGrid/issues"
 }
